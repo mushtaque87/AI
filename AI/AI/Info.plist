@@ -34,5 +34,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We need to access the camera to capture the wrold around you.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Set the Background</string>
 </dict>
 </plist>

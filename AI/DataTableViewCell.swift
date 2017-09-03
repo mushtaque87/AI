@@ -30,6 +30,7 @@ class DataTableViewCell : BaseTableViewCell  {
     
     @IBOutlet weak var dataImage: UIImageView!
     @IBOutlet weak var dataText: UILabel!
+     @IBOutlet weak var detailText: UILabel!
      @IBOutlet weak var shareButton: UIButton!
     var delegate : ImageDownloadDelegate? = nil
     var indexPath : IndexPath = []

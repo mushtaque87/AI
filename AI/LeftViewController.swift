@@ -12,6 +12,8 @@ enum LeftMenu: Int {
     case FirstTab
     case SecondTab
     case ThirdTab
+    case FourthTab
+    case FifthTab
 }
 
 protocol LeftMenuProtocol : class {
@@ -21,11 +23,13 @@ protocol LeftMenuProtocol : class {
 class LeftViewController : UIViewController, LeftMenuProtocol {
     
     @IBOutlet weak var tableView: UITableView!
-    var menus = ["FirstTab", "SecondTab", "ThirdTab"]
+    var menus = ["Form", "Emotion Index", "Jobs", "RelationShip", "Activity","Stress Mesure"]
     var mainViewController: UIViewController!
     var firstTab_ViewController: UIViewController!
     var secondTab_ViewController: UIViewController!
     var thirdTab_ViewController: UIViewController!
+    var fourthTab_ViewController: UIViewController!
+    var fifthTab_ViewController: UIViewController!
 //    var shortClipViewController: UIViewController!
 //      var speechesViewController: UIViewController!
 //    var specialViewController: UIViewController!
@@ -55,14 +59,14 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
         
         let thirdTab_ViewController = storyboard.instantiateViewController(withIdentifier: "ThridTab_ViewController") as! ThridTab_ViewController
         self.thirdTab_ViewController = UINavigationController(rootViewController: thirdTab_ViewController)
-        /*
-        let shortClipViewController = storyboard.instantiateViewController(withIdentifier: "ShortClip") as! ShortClip
-        self.shortClipViewController = UINavigationController(rootViewController: shortClipViewController)
+        
+        let fourthTab_ViewController = storyboard.instantiateViewController(withIdentifier: "FourthTab_ViewController") as! FourthTab_ViewController
+        self.fourthTab_ViewController = UINavigationController(rootViewController: fourthTab_ViewController)
 
         
-        let specialViewController = storyboard.instantiateViewController(withIdentifier: "Special") as! Special
-        self.specialViewController = UINavigationController(rootViewController: specialViewController)
-
+        let fifthTab_ViewController = storyboard.instantiateViewController(withIdentifier: "FifthTab_ViewController") as! FifthTab_ViewController
+        self.fifthTab_ViewController = UINavigationController(rootViewController: fifthTab_ViewController)
+        /*
         let speechesViewController = storyboard.instantiateViewController(withIdentifier: "Speeches") as! Speeches
         self.speechesViewController = UINavigationController(rootViewController: speechesViewController)
         
@@ -102,10 +106,10 @@ class LeftViewController : UIViewController, LeftMenuProtocol {
             self.slideMenuController()?.changeMainViewController(self.secondTab_ViewController, close: true)
         case .ThirdTab:
             self.slideMenuController()?.changeMainViewController(self.thirdTab_ViewController, close: true)
-//        case .shortclip:
-//            self.slideMenuController()?.changeMainViewController(self.shortClipViewController, close: true)
-//        case .special:
-//            self.slideMenuController()?.changeMainViewController(self.specialViewController, close: true)
+        case .FourthTab:
+            self.slideMenuController()?.changeMainViewController(self.fourthTab_ViewController, close: true)
+        case .FifthTab:
+            self.slideMenuController()?.changeMainViewController(self.fifthTab_ViewController, close: true)
 //        case .speeches:
 //            self.slideMenuController()?.changeMainViewController(self.speechesViewController, close: true)
 //        case .about:
@@ -120,7 +124,7 @@ extension LeftViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if let menu = LeftMenu(rawValue: indexPath.row) {
             switch menu {
-            case .main, .FirstTab, .SecondTab, .ThirdTab:
+            case .main, .FirstTab, .SecondTab, .ThirdTab,.FourthTab, .FifthTab:
                 return BaseTableViewCell.height()
             }
         }
@@ -150,7 +154,7 @@ extension LeftViewController : UITableViewDataSource {
         
         if let menu = LeftMenu(rawValue: indexPath.row) {
             switch menu {
-            case .main, .FirstTab,.SecondTab,.ThirdTab:
+            case .main, .FirstTab,.SecondTab,.ThirdTab,.FourthTab,.FifthTab:
                 let cell = BaseTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: BaseTableViewCell.identifier)
                 cell.setData(menus[indexPath.row])
                 return cell

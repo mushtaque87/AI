@@ -21,6 +21,7 @@ class MainViewController: UIViewController{
      var searchMaxCount = 0
     var nextPageToken:NSString = ""
     @IBOutlet weak var activityindicator : UIActivityIndicatorView!
+  
     
         //= ["data1", "data2", "data3", "data4", "data5", "data6", "data7", "data8", "data9", "data10", "data11", "data12", "data13", "data14", "data15"]
     
@@ -34,6 +35,8 @@ class MainViewController: UIViewController{
         super.viewDidLoad()
         //self.tableView.registerCellNib(DataTableViewCell.self)
       //  startHttpConnection();
+        self.view.backgroundColor = UIColor.init(red:52.0/255.0 , green: 73.0/255.0, blue:94.0/255.0, alpha: 1.0)
+
         self.definesPresentationContext = true
         
         let searchbar : UISearchBar = UISearchBar();
@@ -58,6 +61,14 @@ class MainViewController: UIViewController{
         self.navigationItem.titleView = search*/
     }
     
+    @IBAction  func  findHA()
+    {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let subContentsVC = storyboard.instantiateViewController(withIdentifier: "HeartAgeViewController") as! HeartAgeViewController
+    self.navigationController?.pushViewController(subContentsVC, animated: true)
+ 
+    }
+
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
     }
@@ -91,6 +102,7 @@ class MainViewController: UIViewController{
         super.didReceiveMemoryWarning()
     }
 
+    
     /*
     func startHttpConnection()
     {
@@ -328,6 +340,12 @@ func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
       //    self.tableView.reloadData()
     }
     */
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 }
 
 /*

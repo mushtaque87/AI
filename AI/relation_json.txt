@@ -1,0 +1,28 @@
+{
+	"relation": [
+      		  {
+
+				"Title": "Amanda Peters",
+				"Company": "New York, US",
+              			  "Logo": "Phillips_logo.jpg"
+
+			},
+			{
+				"Title": "Gracie Adams",
+				"Company": "California, US",
+             		         "Logo": "Phillips_logo.jpg"
+         		   },
+         		   {
+
+				"Title": "Maria Long",
+				"Company": "Washington DC, US",
+             		        "Logo": "google_logo.png"
+
+			},
+			{
+				"Title": "Mary James",
+				"Company": "Texas, Navada",
+              			  "Logo": "google_logo.png"
+			}
+		]
+}

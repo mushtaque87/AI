@@ -13,10 +13,12 @@ class ExSlideMenuController : SlideMenuController {
 
     override func isTagetViewController() -> Bool {
         if let vc = UIApplication.topViewController() {
-            if vc is MainViewController // ||
-//            vc is SwiftViewController ||
-//            vc is LiveFeature ||
-//            vc is Speeches ||
+            if vc is MainViewController  ||
+                vc is FirstTab_ViewController  ||
+                vc is SecondTab_ViewController  ||
+                vc is ThridTab_ViewController ||
+                 vc is FourthTab_ViewController ||
+                vc is FifthTab_ViewController
 //            vc is Naat ||
 //            vc is Special ||
 //            vc is ShortClip ||
