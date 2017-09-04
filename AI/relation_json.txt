@@ -1,28 +1,47 @@
 {
-	"relation": [
-      		  {
-
-				"Title": "Amanda Peters",
-				"Company": "New York, US",
-              			  "Logo": "Phillips_logo.jpg"
-
-			},
-			{
-				"Title": "Gracie Adams",
-				"Company": "California, US",
-             		         "Logo": "Phillips_logo.jpg"
-         		   },
-         		   {
-
-				"Title": "Maria Long",
-				"Company": "Washington DC, US",
-             		        "Logo": "google_logo.png"
-
-			},
-			{
-				"Title": "Mary James",
-				"Company": "Texas, Navada",
-              			  "Logo": "google_logo.png"
-			}
-		]
+  "relation": [
+    {
+      "Title": "Rachel Zane",
+      "Company": "New York, US",
+      "Logo": "RachelZane.jpg"
+    },
+    {
+      "Title": "Donna Paulsen",
+      "Company": "California, US",
+      "Logo": "Donna_Paulsen.png"
+    },
+    {
+      "Title": "Drashti Reddy",
+      "Company": "Bangalore, India",
+      "Logo": "Madhubala-Drashti-.jpg"
+    },
+    {
+      "Title": "Caparova",
+      "Company": "Texas, Navada",
+      "Logo": "trainer.jpg"
+    },
+    {
+      "Title": "Megan Paul",
+      "Company": "Texas, Horton",
+      "Logo": "pinkotry.jpg"
+    },
+    {
+      "Title": "Kate Robinson",
+      "Company": "New York, US",
+      "Logo": "professionalwomen.jpg"
+    },
+    {
+      "Title": "Isabella Mary",
+      "Company": "New Jersey, US",
+      "Logo": "prettylady.jpg"
+    },{
+      "Title": "Amanda Meeds",
+      "Company": "Georgia, US",
+      "Logo": "drunker.jpg"
+    },{
+      "Title": "Alexandria",
+      "Company": "Virginia, US",
+      "Logo": "LR MyGirls -9791.jpg"
+    }
+  ]
 }

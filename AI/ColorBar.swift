@@ -38,17 +38,17 @@ import UIKit
             start = end
             switch i {
             case 1:
-                 red  = 239.0
-                 green  = 72.0
-                 blue = 54.0
+                 red  = 0.0
+                 green = 177.0
+                 blue = 106.0
             case 2:
                 red  = 248.0
                 green = 148.0
                 blue = 6.0
             default:
-                red  = 0.0
-                green = 177.0
-                blue = 106.0
+                red  = 239.0
+                green  = 72.0
+                blue = 54.0
             }
             UIColor.init(red:red/255.0 , green: green/255.0, blue:blue/255.0, alpha: 1.0).setStroke()
              i += 1

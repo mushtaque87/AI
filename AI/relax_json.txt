@@ -1,0 +1,28 @@
+{
+	"relax": [
+      		  {
+
+				"Title": "Movies",
+				"Company": "Grab some popcorn and watch a movie",
+              			  "Logo": "Dollarphotoclub_73151926.jpg"
+
+			},
+			{
+				"Title": "Vacation",
+				"Company": "Go on a vacation for a week to Hawaii ",
+             		         "Logo": "Vacation.jpg"
+         		   },
+         		   {
+
+				"Title": "Yoga ",
+				"Company": "A session of yoga for 1 hr everyday relax the mind",
+             		        "Logo": "yoga.jpg"
+
+			},
+			{
+				"Title": "Sing a Karaoke",
+				"Company": "Singing relaxes your mind by 15%",
+              			  "Logo": "karakoe.jpg"
+			}
+		]
+}

@@ -14,8 +14,8 @@ class HeartAgeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.init(red:52.0/255.0 , green: 73.0/255.0, blue:94.0/255.0, alpha: 1.0)
-        self.tableView.registerCellNib(DataTableViewCell.self)
-        self.tableView.delegate = self
+       // self.tableView.registerCellNib(DataTableViewCell.self)
+        //self.tableView.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -37,7 +37,7 @@ class HeartAgeViewController: UIViewController {
 
    
     }
-
+/*
 extension HeartAgeViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //return 50
@@ -106,4 +106,4 @@ extension HeartAgeViewController : UITableViewDataSource {
     }
 }
 
-
+*/

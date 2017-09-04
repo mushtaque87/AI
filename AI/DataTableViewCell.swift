@@ -34,9 +34,10 @@ class DataTableViewCell : BaseTableViewCell  {
      @IBOutlet weak var shareButton: UIButton!
     var delegate : ImageDownloadDelegate? = nil
     var indexPath : IndexPath = []
+    
     override func awakeFromNib() {
-        self.dataText?.font = UIFont.systemFont(ofSize: 18)
-        self.dataText?.textColor = UIColor(hex: "9E9E9E")
+       // self.dataText?.font = UIFont.systemFont(ofSize: 18)
+        //self.dataText?.textColor = UIColor(hex: "9E9E9E")
     //    addObserver(self, forKeyPath: #keyPath(dataImage), options: [.old, .new, .initial], context: nil)
 
     }

@@ -1,28 +1,51 @@
 {
-	"Jobs": [
-        {
-
-				"Title": "Technical Specilist",
-				"Company": "Philips",
-                "Logo": "Phillips_logo.jpg"
-
-			},
-			{
-				"Title": "Technical Specilist",
-				"Company": "Philips",
-                "Logo": "Phillips_logo.jpg"
-            },
-            {
-
-				"Title": "Technical Specilist",
-				"Company": "Google",
-                "Logo": "google_logo.png"
-
-			},
-			{
-				"Title": "Technical Specilist",
-				"Company": "Google",
-                "Logo": "google_logo.png"
-			}
-		]
+  "Jobs": [
+    {
+      "Title": "Engineer III- Java Developer",
+      "Company": "@WalmartLabs India",
+      "Logo": "Wallmart.png"
+    },
+    {
+      "Title": "Software Developer",
+      "Company": "Vlocity",
+      "Logo": "Vlocity.png"
+    },
+    {
+      "Title": "Technical Specilist",
+      "Company": "Philips",
+      "Logo": "Phillips_logo.jpg"
+    },
+    {
+      "Title": "Director of Engineering",
+      "Company": "Ace Turtle Services Ltd",
+      "Logo": "acelurtle.png"
+    },
+    {
+      "Title": "Machine Learning",
+      "Company": "Google",
+      "Logo": "Google.png"
+    },
+    {
+      "Title": "Data Engineer",
+      "Company": "Google",
+      "Logo": "Google.png"
+    },
+	{
+      "Title": "Data Specilist",
+      "Company": "Facebook",
+      "Logo": "facebook.jpg"
+    },
+	{
+      "Title": "Software Engineer",
+      "Company": "Facebook",
+      "Logo": "facebook.jpg"
+    },
+	{
+      "Title": "Senior Java Developer",
+      "Company": "Apple",
+      "Logo": "apple.png"
+    }
+  ]
 }
+
+

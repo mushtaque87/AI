@@ -65,6 +65,11 @@ class ThridTab_ViewController: UIViewController {
         }
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
     /*
     // MARK: - Navigation
 

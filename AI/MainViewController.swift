@@ -16,7 +16,21 @@ class MainViewController: UIViewController{
     var searchActive : Bool = false
     var searchString = ""
     var newSearchString  = ""
-
+    @IBOutlet var filldata: UIButton!
+    @IBOutlet var age: UITextField! 
+    @IBOutlet var weight: UITextField!
+    @IBOutlet var height: UITextField!
+    @IBOutlet var diet: UITextField!
+    @IBOutlet var cigretteCount: UITextField!
+    @IBOutlet var exercise: UITextField!
+    @IBOutlet var yrOfQuiting: UITextField!
+    @IBOutlet var sbp: UITextField!
+    @IBOutlet var dbp: UITextField!
+    @IBOutlet var cholestrol: UITextField!
+    @IBOutlet var hdl: UITextField!
+    @IBOutlet var chd: UITextField!
+    @IBOutlet var alcohol: UITextField!
+    @IBOutlet var diabetics: UITextField!
     var maxCount = 0
      var searchMaxCount = 0
     var nextPageToken:NSString = ""
@@ -39,12 +53,18 @@ class MainViewController: UIViewController{
 
         self.definesPresentationContext = true
         
-        let searchbar : UISearchBar = UISearchBar();
-       // searchbar.delegate = self
-        searchbar.placeholder = "Search the whole channel"
-        searchbar.returnKeyType = UIReturnKeyType.search
-        self.navigationItem.titleView =  searchbar
-        self.definesPresentationContext = true;
+        
+//        let searchbar : UISearchBar = UISearchBar();
+//       // searchbar.delegate = self
+//        searchbar.placeholder = "Search the whole channel"
+//        searchbar.returnKeyType = UIReturnKeyType.search
+        let header = UILabel(frame: CGRect(x:0,y: 0,width: 250,height: 50))
+        header.textAlignment = .center
+        header.textColor = .white
+        header.font = UIFont(name: "System-Bold", size: 25.0)
+        header.text = "Fill Detail"
+       self.navigationItem.titleView =  header
+//        self.definesPresentationContext = true;
 
         
 //        let searchController : UISearchController = UISearchController();
@@ -340,13 +360,31 @@ func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
       //    self.tableView.reloadData()
     }
     */
-    
+ @IBAction   func fillDetails()
+    {
+        age.text = "58";
+        weight.text = "76"
+        height.text = "170"
+        diet.text = "3"
+        cigretteCount.text = "3"
+        exercise.text = "3"
+        yrOfQuiting.text = "0"
+        sbp.text = ""
+        dbp.text = ""
+        cholestrol.text = ""
+        hdl.text = "149"
+        chd.text = "60"
+        alcohol.text = "0"
+       // diabetics: UITextField!
+    }
+
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
     }
 }
+
 
 /*
 
